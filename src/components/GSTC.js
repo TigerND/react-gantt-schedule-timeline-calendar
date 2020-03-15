@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect } from "react";
-import GSTC from "gantt-schedule-timeline-calendar";
-import "gantt-schedule-timeline-calendar/dist/style.css";
+import React, { useCallback, useEffect } from 'react';
+import GSTC from 'gantt-schedule-timeline-calendar';
+import 'gantt-schedule-timeline-calendar/dist/style.css';
 
 let gstc;
 export default function GSTCWrapper(props) {
@@ -24,7 +24,7 @@ export default function GSTCWrapper(props) {
   useEffect(() => {
     return () => {
       if (gstc) {
-        gstc.app.destroy();
+        // gstc.app.destroy();
       }
     };
   });
